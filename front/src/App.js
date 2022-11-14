@@ -1,21 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import logo from './logo.svg';
+import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Result from '../src/Components/Result';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sur la route des JO
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Acceuil />} />
+        <Route path='/result' element={<Result />} />
+      </Routes>
+    </BrowserRouter>
+  </>
   );
 }
 
