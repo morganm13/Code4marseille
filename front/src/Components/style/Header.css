@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    background-color: brown;
+}
+
+.force {
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+
+.padder {
+    margin-left: 5%;
+    width: 70%;
+}
+
+.MiddleSearch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        flex-direction: row;
+
+}
+
+.event {
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 15%;
+}
+
+.time {
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 15%;
+}
+
+.Searcher {
+    height: 30px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 18px;
+}
+
+.Lpadder{margin-top: 5px;
+max-width: 70px;
+width: 20%;}
+* {
+    margin: 0;
+}

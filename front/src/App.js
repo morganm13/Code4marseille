@@ -9,7 +9,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Acceuil />} />
-        <Route path='/result' element={<Result />} />
       </Routes>
     </BrowserRouter>
   </>
