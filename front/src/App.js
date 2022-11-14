@@ -1,6 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
-import logo from './logo.svg';
+import Acceuil from "../src/Components/Acceuil"
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Result from '../src/Components/Result';
