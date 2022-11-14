@@ -10,10 +10,7 @@ function Acceuil() {
 
     return (
     <>
-    <Header/>
-    <Search/>
-    <Map/>
-    <Result/>
+        <Search/>
     </>)
 
 
