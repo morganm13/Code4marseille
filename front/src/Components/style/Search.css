@@ -1,0 +1,16 @@
+#timeline
+{
+    height: 70px;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.activity
+{
+    background-color: red;
+    height: 100%;
+    border-radius: 50px;
+}

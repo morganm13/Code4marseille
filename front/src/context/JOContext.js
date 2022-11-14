@@ -7,8 +7,8 @@ export const JOConsumer = ({ children }) =>
     const [JO, setJO] = useState([1, 2]);
 
     return (
-        <UserContext.Provider value={{JO, setJO}}>
+        <JOContext.Provider value={{JO, setJO}}>
             {children}
-        </UserContext.Provider>
+        </JOContext.Provider>
     )
 }
