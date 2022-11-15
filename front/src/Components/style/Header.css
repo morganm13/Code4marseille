@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../../public/Poppins-Light.ttf');
+}
+::-webkit-scrollbar {
+    display: none;
+}
 h6{padding-top: 8px;
-padding-left: 12px;}
+font-family: 'Poppins';}
 h5{padding-top: 6px;
-    padding-left: 30px;}   
+    font-family: 'Poppins';} 
+    .Logo{width: 90%;}  
 .container {
     display: flex;
     flex-direction: row;
@@ -35,6 +43,14 @@ h5{padding-top: 6px;
 animation: fade 1s;}
 .hasOff{opacity: 0;
 animation: infade 1s}
+.sizeOn{
+    animation: resizer 1s;
+    width: 45%;    
+}
+    .sizeOff{
+    animation: deresizer 1s;
+    width: 20%;
+}
 .event {
     border: 2px solid white;
     border-radius: 8px;
@@ -46,7 +62,18 @@ animation: infade 1s}
     border-radius: 8px;
     width: 15%;
 }
-
+.eventspe{
+    background-color: whitesmoke;
+    overflow: auto;
+    height: 160px;
+    border: 4px solid purple;
+    border-radius: 16px;
+    width: 30%;
+    color: black;
+    text-align: center;
+    margin-left: 15%; 
+    font-family: 'Poppins';
+}
 .spe{background-color: rebeccapurple;
     border: 4px solid purple;
     border-radius: 12px;
@@ -54,6 +81,7 @@ width: 30%;
 text-align: center;
 color: white;
 margin-left: 35%; 
+font-family: 'Poppins';
 }
 .search{
     border: 4px solid purple;
@@ -62,6 +90,7 @@ width: 80%;
 height: 5%;
 text-align: center;
 color: black;
+font-family: 'Poppins';
 }
 
 .Searcher {
@@ -69,10 +98,11 @@ color: black;
     border-radius: 18px;
     padding-bottom: 3px;
     margin-bottom: 2px;
+    display: flex;
     backface-visibility:hidden;
+    font-family: 'Poppins';
 }
 .Evenement{
-    width: 33%;
     border: 2px solid #00004D;
     background-color: white;
     border-radius: 16px;
@@ -90,22 +120,33 @@ background-color: white;
 display: flex;
 justify-content: center;
 height: calc(100vh - 60px);}
-#spe{width: 15%;
-left: 20%;}
+#spe{
+left: 20%;
+font-family: 'Poppins';
+text-align: center;}
 #Search{
-    left: 75%;
-    bottom: 226%;
-    width: 54%;
+    left: 24%;
+    font-family: 'Poppins';
+    text-align: center;
 }
 #Date{
-    left: 39%;
-    bottom: 115%;}
+    left: 22%;
+    text-align: center;
+    font-family: 'Poppins';}
 
 .Lpadder{margin-top: 5px;
 max-width: 70px;
 width: 20%;}
 * {
     margin: 0;
+}
+@keyframes resizer {
+    0%{width: 20%;}
+    100%{width: 45%;}
+}
+@keyframes deresizer {
+    0%{width: 45%;}
+    100%{width: 20%;}
 }
 @keyframes fade {
     0% {opacity : 0;}
