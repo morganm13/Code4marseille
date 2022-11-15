@@ -4,7 +4,7 @@ import './style/Map.css'
 mapboxgl.accessToken =
   "pk.eyJ1IjoianVsaWFubWFuY2hlYyIsImEiOiJjbGFpMGkwaXAwaDE5M3dtejY1aXVmZzZoIn0.xxr5qSlakNCcOmRQh9RKMg";
 
-export default function Map() {
+function Map() {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(-70.9);
@@ -29,7 +29,6 @@ export default function Map() {
       setZoom(map.current.getZoom().toFixed(2));
     });
   });
-
   return (
     <div>
       <div className="sidebar">
@@ -39,3 +38,5 @@ export default function Map() {
     </div>
   );
 }
+export default Map;
+

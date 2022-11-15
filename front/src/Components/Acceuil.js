@@ -10,7 +10,7 @@ function Acceuil() {
         <>
             <Header />
             <Map />
-            {/* <Result/> */}
+            <Search/>
         </>
     )
 }
