@@ -9,9 +9,10 @@ function Acceuil() {
 
 
     return (
-    <>
-    <Header />
-    </>)
+        <>
+            <Search />
+        </>
+    )
 
 
 }
