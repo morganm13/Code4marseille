@@ -1,7 +1,7 @@
 
 import '../App'
 import './style/Header.css'
-import logo from './JORoute.png'
+import logo from './img/JOrouteblanche.png'
 import React, { useState } from "react";
 
 function Header() {
