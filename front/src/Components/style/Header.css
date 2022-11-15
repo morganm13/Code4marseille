@@ -137,8 +137,6 @@ flex-direction: row;}
 .right{width: 50%;}
 .left{width: 50%;}
 .img{width: 100%;}
-<<<<<<< Updated upstream
-=======
 .ctnr{width: 100%;
 display: flex;
 flex-direction: row;}
@@ -146,7 +144,6 @@ flex-direction: row;}
 .left{width: 50%;}
 .img{width: 100%;
 height: 100%;}
->>>>>>> Stashed changes
 #Date{
     left: 22%;
     text-align: center;
