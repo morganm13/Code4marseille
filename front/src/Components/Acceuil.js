@@ -10,7 +10,7 @@ function Acceuil() {
 
     return (
         <>
-            <Search />
+            <Map />
         </>
     )
 
