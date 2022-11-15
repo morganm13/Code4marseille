@@ -25,4 +25,15 @@ function Map()
     )
 }
 
+<<<<<<< Updated upstream
 export default Map;
+=======
+  return (
+    <div>
+      
+      <div ref={mapContainer} className="map-container" />
+      </div>    
+      
+  );
+}
+>>>>>>> Stashed changes

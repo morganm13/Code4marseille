@@ -9,8 +9,13 @@ function Acceuil() {
     return (
         <>
             <Header />
+<<<<<<< Updated upstream
             {/* <Map /> */}
             {/* <Result/> */}
+=======
+            <Map />
+            <Search/>
+>>>>>>> Stashed changes
         </>
     )
 }
