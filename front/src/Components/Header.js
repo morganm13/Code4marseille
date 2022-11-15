@@ -27,7 +27,10 @@ function Header() {
     </div>
     {Modalspe ? (
       <div className="eventspe">
-        spe<br/>
+        <div className='ctnr'></div>
+        <div className='right'>
+        <img src={logo} className="img"></img>spe<br/>
+        </div>
         spe<br/>
         spe<br/>
         spe<br/>

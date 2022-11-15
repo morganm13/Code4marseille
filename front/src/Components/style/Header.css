@@ -128,7 +128,15 @@ text-align: center;}
     left: 24%;
     font-family: 'Poppins';
     text-align: center;
+    padding-right:8%;
+    padding-left:8%;
 }
+.ctnr{width: 100%;
+display: flex;
+flex-direction: row;}
+.right{width: 50%;}
+.left{width: 50%;}
+.img{width: 100%;}
 #Date{
     left: 22%;
     text-align: center;
