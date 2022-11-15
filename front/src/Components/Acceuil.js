@@ -6,14 +6,12 @@ import Result from "../Components/Result"
 import './style/Acceuil.css'
 
 function Acceuil() {
-
-
     return (
         <>
+            <Header />
             <Map />
         </>
     )
-
-
 }
+
 export default Acceuil; 

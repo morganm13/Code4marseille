@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 
 function Map()
 {
-
     var axiosConfig = {
         method: 'get',
         url: "https://api.mapbox.com/directions/v5/mapbox/cycling/-122.42,37.78;-77.03,38.91?access_token=pk.eyJ1IjoianVsaWFubWFuY2hlYyIsImEiOiJjbGFpMGkwaXAwaDE5M3dtejY1aXVmZzZoIn0.xxr5qSlakNCcOmRQh9RKMg",
