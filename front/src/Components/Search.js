@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { JOContext } from '../context/JOContext';
 import './style/Search.css';
 import JOJson from '../JSON/JO.json';
@@ -6,19 +6,30 @@ import JOJson from '../JSON/JO.json';
 function Search()
 {
     const {JO} = useContext(JOContext);
+    const [sizeArray, setSizeArray] = useState([])
+    const oneHour = 4.1;
 
-    var OneHour = 4.1;
+    JO.forEach(item => {
 
-    var timeJO1 = JOJson[JO[0]].heureDeFin - JOJson[JO[0]].heureDeDebut;
+        var timeJO = JOJson[JO[item]].heureDeFin - JOJson[JO[item]].heureDeDebut;
+    
+        var size = 4.1 * timeJO;
 
-    var size = 4.1 * timeJO1;
+        sizeArray.push(size);
+    });
+
+    console.log(sizeArray);
 
     return (
         <div id="timeline">
-            {/* 1h c'est un width de 4.1% */}
-            <div className="activity" style={{width: `${size}%`}}>
-
-            </div>
+                {/* 1h c'est un width de 4.1% */}
+                {sizeArray.map((data, key) => (
+                    <>
+                        {console.log("data :", data)}
+                        <div className="activity" style={{width: `${data}%`}}>
+                        </div>
+                    </>
+                ))}
         </div>
     )
 }

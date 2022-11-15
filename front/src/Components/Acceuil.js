@@ -9,13 +9,10 @@ function Acceuil() {
 
 
     return (
-    <>
-<<<<<<< HEAD
-        <Search/>
-=======
-    <Header />
->>>>>>> 61da38215e8b3a24c310c14ba3f2b0d7a99275ae
-    </>)
+        <>
+            <Search />
+        </>
+    )
 
 
 }
