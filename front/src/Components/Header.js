@@ -1,7 +1,7 @@
 
 import '../App'
 import './style/Header.css'
-import logo from './JORoute.png'
+import logo from './img/JOrouteblanche.png'
 import React, { useState } from "react";
 
 function Header() {
@@ -27,7 +27,10 @@ function Header() {
     </div>
     {Modalspe ? (
       <div className="eventspe">
-        spe<br/>
+        <div className='ctnr'></div>
+        <div className='right'>
+        <img src={logo} className="img"></img>spe<br/>
+        </div>
         spe<br/>
         spe<br/>
         spe<br/>
