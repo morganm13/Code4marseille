@@ -43,34 +43,6 @@ function Header() {
       </div>
     </div>
     {Modalspe ? (
-<<<<<<< Updated upstream
-      <div className="eventspe">
-        <div className='ctnr'></div>
-        <div className='right'>
-        <img src={logo} className="img"></img>spe<br/>
-        </div>
-        spe<br/>
-        spe<br/>
-        spe<br/>
-        spe<br/>
-        spe<br/>
-        spe<br/>
-        spe<br/>
-        spe<br/>
-        spe<br/>
-      </div>
-    ) : null}
-    {Modaldate ? (
-      <div className="spe">
-        date
-      </div>
-    ) : null}
-    {Modalsearch ? (
-       <div className={`wht ${Modalsearch ? 'hasOn' : 'hasOff'}`} id='searcher'>
-      <div className='bordure'>
-      <input className="search"/>
-      </div>
-=======
       <div className={`eventspe ${Modalspe ? 'drop' : 'up'}`}>
         <div className='ctnr' value="1" onClick={() => {addEvent(1)}}>
         <img src={sport3}  alt='sl'className="logow"></img>
@@ -128,7 +100,6 @@ function Header() {
         <img src={sport50} alt='sl' className="logow"></img>
         <div className='sport'>Triathlon</div>
         </div>
->>>>>>> Stashed changes
        </div>
    ) : null}
    {Modaldate ? (
