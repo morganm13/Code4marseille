@@ -43,13 +43,13 @@ function Search()
         setModalspe(false)
         console.log(day);
         JOJson.forEach((item) => {
-            if(parseInt(item.date.split('/')[1]) == parseInt(day-1))
+            if(parseInt(item.date.split('/')[1]) == 12)
             {
                 let timeJO = parseInt(item.heureDeFin) - parseInt(item.heureDeDebut);
                 let timeAfter8Hour = parseInt(item.heureDeDebut) - 8;
         
-                let position = 6.2 * timeAfter8Hour;
-                let width = 6.1 * timeJO;
+                let position = 6.2 * 4;
+                let width = 6.1 * 4;
 
                 event.push(<div className="activity" style={{width:`${width}%`, marginLeft:`${position}%`}}></div>);
             }

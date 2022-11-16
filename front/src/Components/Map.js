@@ -10,15 +10,10 @@ function Map() {
   const {JO} = useContext(JOContext);
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lng, setLng] = useState(5.3722);
-  const [lat, setLat] = useState(43.2950);
-  const [zoom, setZoom] = useState(12);
+  const [lng, setLng] = useState(5.3750);
+  const [lat, setLat] = useState(43.2660);
+  const [zoom, setZoom] = useState(15);
   let arrayLocalisation = [];
-
-  JO.forEach((item) => {
-    arrayLocalisation.push([JOJson[item].lng, JOJson[item].lat]);
-    console.log(arrayLocalisation);
-  }, [JO]);
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -31,6 +26,12 @@ function Map() {
   });
 
   useEffect(() => {
+
+    JO.forEach((item) => {
+      arrayLocalisation.push([JOJson[item].lng, JOJson[item].lat]);
+      console.log(arrayLocalisation);
+    });
+
     if (!map.current) return; // wait for map to initialize
     map.current.on('load', () => {
         map.current.addSource('route', {
@@ -40,7 +41,7 @@ function Map() {
                 'properties': {},
                 'geometry': {
                     'type': 'LineString',
-                    'coordinates': arrayLocalisation 
+                    'coordinates': [[ "5.3750", "43.2660" ], [ "5,3925", "43,2701" ], [ "5.3740", "43.2640" ], ["5.3740", "43.2650"], ["5.3750", "43.2690"], ["5.3780", "43.2690"]]
                 }
             }
         });
