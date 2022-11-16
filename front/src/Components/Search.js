@@ -6,6 +6,7 @@ import JOJson from '../JSON/JO.json';
 function Search()
 {
     const {JO} = useContext(JOContext);
+    const [Modalspe, setModalspe] = useState(false);
     const [eventDisplay, setEventDisplay] = useState([])
     var nbDay;
     var firstEventDay = 0;
@@ -38,6 +39,7 @@ function Search()
     function displayTimeline(day)
     {
         event = [];
+        setModalspe(false)
         console.log(day);
         JOJson.forEach((item) => {
             if(parseInt(item.date.split('/')[1]) == parseInt(day-1))
@@ -59,11 +61,17 @@ function Search()
         <>
             <div id="corp">
                  <div>
-                    <div id="selectDay">
+                    <div id="selectDay" onClick={() => setModalspe(!Modalspe)}>
                         Jour 1{/* Jour selectionner */}
                     </div>
-                    {days}
                 </div>
+                    {Modalspe ? (
+     <div className="cube">
+        <div className="days">
+      {days}
+     </div>
+     </div>
+   ) : null}
                 <div id="timeline">
                     {eventDisplay}
                     <div id="hour">
