@@ -8,7 +8,7 @@
         "heureDeFin": "10",
         "lng": "5.3713",
         "lat": "43.2665"
-    }
+    },
     {
         "id": "2",
         "event": "Natation de marathon",
@@ -17,7 +17,7 @@
         "heureDeFin": "11",
         "lng": "5.3713",
         "lat": "43.2665"
-    }
+    },
    {
         "id": "3",
         "event": "Natation artistique",
@@ -25,8 +25,8 @@
         "heureDeDebut": "11",
         "heureDeFin": "13",
         "lng": "5.3713",
-        "lat": "43.2665",
-    }
+        "lat": "43.2665"
+    },
     {
         "id": "4",
         "event": "Canoë slalom",
@@ -34,8 +34,8 @@
         "heureDeDebut": "14",
         "heureDeFin": "16",
         "lng": "5.3713",
-        "lat": "43.2665",
-    }
+        "lat": "43.2665"
+    },
     {
         "id": "5",
         "event": "Football",
@@ -43,8 +43,8 @@
         "heureDeDebut": "16",
         "heureDeFin": "18",
         "lng": "5.3955",
-        "lat": "43.2692",
-    }
+        "lat": "43.2692"
+    },
     {
         "id": "6",
         "event": "Aviron",
@@ -52,8 +52,8 @@
         "heureDeDebut": "9",
         "heureDeFin": "11",
         "lng": "5.3713",
-        "lat": "43.2665",
-    }
+        "lat": "43.2665"
+    },
     {
         "id": "7",
         "event": "Natation",
@@ -61,8 +61,8 @@
         "heureDeDebut": "20",
         "heureDeFin": "23",
         "lng": "5.3713",
-        "lat": "43.2665",
-    }
+        "lat": "43.2665"
+    },
     {
         "id": "8",
         "event": "Surf",
@@ -70,16 +70,17 @@
         "heureDeDebut": "10",
         "heureDeFin": "12",
         "lng": "5.3713",
-        "lat": "43.2665",
-    }{
+        "lat": "43.2665"
+    },
+    {
         "id": "9",
         "event": "Water-polo",
         "date": "30/07/24",
         "heureDeDebut": "15",
         "heureDeFin": "20",
         "lng": "5.3713",
-        "lat": "43.2665",
-    }
+        "lat": "43.2665"
+    },
     {
         "id": "10",
         "event": "Water-polo",
@@ -87,6 +88,6 @@
         "heureDeDebut": "15",
         "heureDeFin": "20",
         "lng": "5.3713",
-        "lat": "43.2665",
+        "lat": "43.2665"
     }
 ]

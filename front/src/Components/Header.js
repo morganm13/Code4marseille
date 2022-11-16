@@ -2,6 +2,7 @@
 import '../App'
 import './style/Header.css'
 import Pcalendar from './Pcalendar'
+import './Map'
 import logo from './img/JOrouteblanche.png'
 import sport30 from './img/sport30.png'
 import sport3 from './img/sport3.png'
@@ -18,6 +19,7 @@ import sport48 from './img/sport48.png'
 import sport49 from './img/sport49.png'
 import sport50 from './img/sport50.png'
 import React, { useState } from "react";
+
 function Header() {
     const [Modalspe, setModalspe] = useState(false);
     const [Modaldate, setModaldate] = useState(false);
@@ -26,6 +28,7 @@ function Header() {
     function addEvent(int){
       ArrayItem.push(int);
       console.log(ArrayItem);
+      Map.addSource()
     }
   return (<>
     <div className='container'>

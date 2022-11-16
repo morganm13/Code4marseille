@@ -38,7 +38,7 @@
 {
     display: flex;
     flex-direction: row;
-    width: 40%;
+    width: 70%;
     margin-top: 15%;
 }
 
@@ -67,7 +67,7 @@ width: 8.1%;
 }
 #selectDay
 {
-    height: 100%;
+    height: 75%;
     border: 3px solid #00004D;
     color: #00004D;
     border-radius: 12px;
