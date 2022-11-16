@@ -3,16 +3,25 @@ import React, { useState } from "react";
 import '../App'
 const Pcalendar =()=>{
     const [date, setDate]= useState(new Date());
+    const [state, setState] = useState(true);
+    var result;
+    const locale = 'fr-CA';
     const onChange  = date => {
-      setDate(date);
+      setDate(date.toLocaleDateString());
+      console.log(date);
       ask();
+      setState(false);
     };
     function ask(){
-        return(<>OUI</>)
+        result = <p>OUI</p>;
     }
     return(
     <div>
-    <Calendar showWeekNumbers onChange={onChange} value={date}/>
+      {state ?
+        <Calendar showWeekNumbers onChange={onChange} value={date} />
+      : 
+        <div><p>oui</p></div>
+      }
     </div>
     )
     }
