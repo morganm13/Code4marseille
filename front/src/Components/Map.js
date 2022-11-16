@@ -1,15 +1,24 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useContext } from "react";
+import { JOContext } from '../context/JOContext';
+import JOJson from '../context/JOEvent.json';
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import './style/Map.css'
 mapboxgl.accessToken =
   "pk.eyJ1IjoianVsaWFubWFuY2hlYyIsImEiOiJjbGFpMGkwaXAwaDE5M3dtejY1aXVmZzZoIn0.xxr5qSlakNCcOmRQh9RKMg";
 
 function Map() {
+  const {JO} = useContext(JOContext);
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(5.3722);
   const [lat, setLat] = useState(43.2950);
   const [zoom, setZoom] = useState(12);
+  let arrayLocalisation = [];
+
+  JO.forEach((item) => {
+    arrayLocalisation.push([JOJson[item].lng, JOJson[item].lat]);
+    console.log(arrayLocalisation);
+  }, [JO]);
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -27,15 +36,11 @@ function Map() {
         map.current.addSource('route', {
             'type': 'geojson',
             'data': {
-                'type': 'Feature',
+                'type': 'Feature', 
                 'properties': {},
                 'geometry': {
                     'type': 'LineString',
-                    'coordinates': [
-                        [5.3713, 43.2665],
-                        [5.3955, 43.2692],
-                        
-                    ]
+                    'coordinates': arrayLocalisation 
                 }
             }
         });

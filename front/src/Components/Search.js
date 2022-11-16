@@ -8,6 +8,7 @@ function Search()
     const {JO} = useContext(JOContext);
     const [Modalspe, setModalspe] = useState(false);
     const [eventDisplay, setEventDisplay] = useState([])
+    const [day, setDay] = useState(1);
     var nbDay;
     var firstEventDay = 0;
     var lastEventDay = 0;
