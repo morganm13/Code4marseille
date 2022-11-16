@@ -21,23 +21,17 @@ function Search()
 
 
     return (
-        <>
-            <div id="timeline">
+        <div id="timeline">
                 {/* 1h c'est un width de 4.1% */}
-                {sizeArray.map((data, key) => ( 
+                {sizeArray.map((data, key) => (
                     <>
-                        <div className="activity" style={{width:`${data[0]}%`, marginLeft:`${data[1]}%`}}></div>
+                        {console.log("data :", data)}
+                        <div className="activity" style={{width: `${data}%`}}>
+                        </div>
                     </>
                 ))}
-            </div>
-            <div id="hour">
-                <p>|8h</p>
-                <p className="hour">|12h</p>
-                <p className="hour">|16h</p>
-                <p className="hour">|20h</p>
-                <p className="hour">00h|</p>
-            </div>
-        </>
+                                    </div>
+
     )
 }
 

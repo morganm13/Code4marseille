@@ -43,6 +43,10 @@ h5{padding-top: 6px;
 animation: fade 1s;}
 .hasOff{opacity: 0;
 animation: infade 1s}
+.drop{opacity: 1;
+    animation: drop 1s;}
+    .up{opacity: 0;
+    animation: up 1s}
 .sizeOn{
     animation: resizer 1s;
     width: 45%;    
@@ -65,26 +69,32 @@ animation: infade 1s}
 .eventspe{
     background-color: whitesmoke;
     overflow: auto;
-    height: 160px;
-    border: 4px solid purple;
+    z-index: 9;
+    position: absolute;
+    max-height: 40%;
+    max-width: 50%;
+    border: 4px solid #00004D;
     border-radius: 16px;
-    width: 30%;
+    width: 50%;
     color: black;
     text-align: center;
     margin-left: 15%; 
     font-family: 'Poppins';
 }
-.spe{background-color: rebeccapurple;
-    border: 4px solid purple;
-    border-radius: 12px;
-width: 30%;
-text-align: center;
-color: white;
-margin-left: 35%; 
-font-family: 'Poppins';
-}
+.eventdat{ background-color: whitesmoke;
+    overflow: auto;
+    z-index: 9;
+    position: absolute;
+    max-width: 40%;
+    border: 4px solid #00004D;
+    border-radius: 16px;
+    width: 50%;
+    color: black;
+    text-align: center;
+    margin-left: 15%; 
+    font-family: 'Poppins';}
 .search{
-    border: 4px solid purple;
+    border: 4px solid #00004D;
     border-radius: 12px;
 width: 80%;
 height: 5%;
@@ -92,7 +102,9 @@ text-align: center;
 color: black;
 font-family: 'Poppins';
 }
-
+#searcher{
+    z-index: 9;
+    position: absolute;}
 .Searcher {
     height: 30px;
     border-radius: 18px;
@@ -110,13 +122,15 @@ font-family: 'Poppins';
     position: relative;
 }
 .wht{width: 100%;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: row;
+    position: relative;
 justify-content: center;
-background-color: grey;}
+background-color: rgb(0, 0, 0, 0.7);}
 .bordure{
     width: 80%;
-background-color: white;
+background-color: rgb(0, 0, 0, 0.5);
 display: flex;
 justify-content: center;
 height: calc(100vh - 60px);}
@@ -131,17 +145,27 @@ text-align: center;}
     padding-right:8%;
     padding-left:8%;
 }
+.forced{padding-top: 9px;}
 .ctnr{width: 100%;
 display: flex;
 flex-direction: row;}
-.right{width: 50%;}
-.left{width: 50%;}
+.logow{width: 30%;}
 .img{width: 100%;}
 .ctnr{width: 100%;
 display: flex;
 flex-direction: row;}
-.right{width: 50%;}
-.left{width: 50%;}
+.sport{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{width: 50%;
+    display: flex;
+    flex-direction: column;}
+.left{width: 50%;
+    display: flex;
+    flex-direction: column;}
 .img{width: 100%;
 height: 100%;}
 #Date{
@@ -169,4 +193,20 @@ max-width: 70px;}
 @keyframes infade {
     0% {opacity : 1;}
     100%{opacity: 0;}
+}
+@keyframes drop {
+    0% {width: 0%;
+    height: 0%;}
+    45%{height: 40%;
+    width: 20%;}
+    100%{width: 70%;
+    height: 40%;}
+}
+@keyframes up {
+    0%{width: 70%;
+    height: 60%;}
+    45%{height: 40%;
+    width: 20%;}
+    100% {width: 0%;
+        height: 0%;}
 }
