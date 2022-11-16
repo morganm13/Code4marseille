@@ -1,16 +1,28 @@
 #timeline
 {
-    height: 70px;
-    width: 90%;
-    margin: auto;
+    position: relative;
+    height: 100px;
+    width: 100%;
     background-color: black;
-    border-radius: 20px;
-    padding: 5px;
 }
 
 .activity
 {
+    position: absolute;
     background-color: red;
-    height: 100%;
+    height: 95px;
     border-radius: 50px;
+    opacity: 50%;
+    border: 2px solid black;
+}
+
+#hour
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.hour
+{
+    margin-left: 21.55%;
 }

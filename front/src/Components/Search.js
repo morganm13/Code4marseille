@@ -7,35 +7,30 @@ function Search()
 {
     const {JO} = useContext(JOContext);
     const [sizeArray, setSizeArray] = useState([])
-    const oneHour = 4.1;
 
-    JO.forEach(item => {
+    JO.forEach((item) => {
 
-        var timeJO = JOJson[JO[item]].heureDeFin - JOJson[JO[item]].heureDeDebut;
-    
-        var size = 4.1 * timeJO;
+        let timeJO = parseInt(JOJson[item].heureDeFin) - parseInt(JOJson[item].heureDeDebut);
+        let timeAfter8Hour = parseInt(JOJson[item].heureDeDebut) - 8;
 
-        sizeArray.push(size);
-    });
+        let positionLeft = 6.25 * timeAfter8Hour;
+        let size = 6.2 * timeJO;
 
-    console.log(sizeArray);
+        sizeArray.push([size, positionLeft]);
+    }); 
 
-    return (<>
-        {sizeArray.map((data, key) => (
-            <>
-            {/* 1h c'est un width de 4.1% */}
-                    <div id="timeline">
+
+    return (
+        <div id="timeline">
+                {/* 1h c'est un width de 4.1% */}
+                {sizeArray.map((data, key) => (
+                    <>
                         {console.log("data :", data)}
-<<<<<<< Updated upstream
                         <div className="activity" style={{width: `${data}%`}}>
                         </div>
-=======
-                        <div value={`${data}`}></div>
-                    </div>
->>>>>>> Stashed changes
                     </>
                 ))}
-                                    </>
+                                    </div>
 
     )
 }

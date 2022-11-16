@@ -142,18 +142,15 @@ text-align: center;}
     left: 24%;
     font-family: 'Poppins';
     text-align: center;
+    padding-right:8%;
+    padding-left:8%;
 }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
 .forced{padding-top: 9px;}
 .ctnr{width: 100%;
 display: flex;
 flex-direction: row;}
 .logow{width: 30%;}
 .img{width: 100%;}
->>>>>>> Stashed changes
 .ctnr{width: 100%;
 display: flex;
 flex-direction: row;}
@@ -171,7 +168,6 @@ flex-direction: row;}
     flex-direction: column;}
 .img{width: 100%;
 height: 100%;}
->>>>>>> Stashed changes
 #Date{
     left: 22%;
     text-align: center;
