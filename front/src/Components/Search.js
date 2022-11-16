@@ -20,17 +20,23 @@ function Search()
 
     console.log(sizeArray);
 
-    return (
-        <div id="timeline">
-                {/* 1h c'est un width de 4.1% */}
-                {sizeArray.map((data, key) => (
-                    <>
+    return (<>
+        {sizeArray.map((data, key) => (
+            <>
+            {/* 1h c'est un width de 4.1% */}
+                    <div id="timeline">
                         {console.log("data :", data)}
+<<<<<<< Updated upstream
                         <div className="activity" style={{width: `${data}%`}}>
                         </div>
+=======
+                        <div value={`${data}`}></div>
+                    </div>
+>>>>>>> Stashed changes
                     </>
                 ))}
-        </div>
+                                    </>
+
     )
 }
 
